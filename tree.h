@@ -45,7 +45,7 @@ public:
         //non essentials
         preprocess_lca_fn();
         euler_path_fn(0);        
-        find_diameter();
+        #find_diameter();
         
     }
 
