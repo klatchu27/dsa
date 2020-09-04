@@ -1,2 +1,2 @@
 # DSA
-This contains code of a cpp class which helps in handling processes related to tree data structure in competitive programming
+This contains code of classes or some functions which are frequently used by me in competitive programming
