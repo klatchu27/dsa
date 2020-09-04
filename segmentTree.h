@@ -78,7 +78,7 @@ long long int Sum(long long int x,long long y)
 int main()
 {
     vector<long long int> a ={1,2,3,4,5};
-    segmentTree st(a,Sum,-1);
+    segmentTree st(a,Sum,0);
     cout<<st.queryST(2,3)<<'\n';
     st.updateST(2,100);
     cout<<st.queryST(1,3);
