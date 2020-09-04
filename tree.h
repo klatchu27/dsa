@@ -1,4 +1,8 @@
-		
+#include<vector>
+#include<set>
+#include<iostream>
+#include<queue>		
+using namespace std;
     	
 class Tree
 {
@@ -13,7 +17,7 @@ public:
     vector<long long int> depth;
     
     //strictly for lca
-    vector<vector<long long int>> preprocess_lca;
+    vector< vector<long long int> > preprocess_lca;
 
     //strictly for r=euler path in which every node is repeated exactly 2 times
     vector<long long int> euler_path1;
@@ -45,13 +49,13 @@ public:
         //non essentials
         preprocess_lca_fn();
         euler_path_fn(0);        
-        #find_diameter();
+        //find_diameter();
         
     }
 
     void get_edge()
     {
-        ll x,y;
+        long long int x,y;
         for(int i=0;i<n-1;i++)
         {
             cin>>x>>y;
@@ -197,3 +201,5 @@ public:
     }
 
 };
+
+
