@@ -75,12 +75,24 @@ long long int Sum(long long int x,long long y)
 {
     return x+y;     
 }
+
 int main()
 {
     vector<long long int> a ={1,2,3,4,5};
-    segmentTree st(a,Sum,0);
-    cout<<st.queryST(2,3)<<'\n';
-    st.updateST(2,100);
-    cout<<st.queryST(1,3);
+
+    //creating a segmentTree object requires 3 arguments namely a vector , function to perform , default value incase of no overlap with segment
+    //for a min segment tree pass Min() and +infinity eg: segmentTree stmin(a,Min,+LLONG_MAX); 
+    //for a max segment tree pass Min() and +infinity eg: segmentTree stmax(a,Max,LLONG_MIN); 
+    //below we create a segment tree to find sum of a segment and hence we pass Sum() and 0 as second and third argument 
+
+    segmentTree stsum(a,Sum,0); //takes O(4*n)
+    
+    //To do query on a segment , just pass the query start index and query end index
+    cout<<stsum.queryST(2,3)<<'\n'; //takes O(log(4*n))
+
+    //To update a value just pass the index and the new value at that index as arguments
+    stsum.updateST(2,100);  //takes O(log(4*n))
+
+    cout<<stsum.queryST(1,3);   //takes O(log(4*n))
 }
 */
