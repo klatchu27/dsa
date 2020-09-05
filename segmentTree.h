@@ -3,6 +3,20 @@
 #include<algorithm>
 using namespace std;
 
+/*
+long long int Sum(long long int x,long long y)
+{
+    return x+y;     
+}
+long long int Min(long long int x,long long y)
+{
+    return x<y? x:y;     
+}
+long long int Max(long long int x,long long y)
+{
+    return x>y? x:y;     
+}
+*/
 class segmentTree {
 
 public:
@@ -71,10 +85,6 @@ public:
 };
 
 /*
-long long int Sum(long long int x,long long y)
-{
-    return x+y;     
-}
 
 int main()
 {
