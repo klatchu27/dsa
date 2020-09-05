@@ -1,7 +1,7 @@
-#include<vector>
-#include<iostream>
-#include<algorithm>
-using namespace std;
+// #include<vector>
+// #include<iostream>
+// #include<algorithm>
+// using namespace std;
 
 /*
 long long int Sum(long long int x,long long y)
@@ -85,6 +85,7 @@ public:
 };
 
 /*
+Sample code to illustrate how to use the segmentTree class
 
 int main()
 {
