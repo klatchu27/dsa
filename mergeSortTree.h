@@ -87,3 +87,4 @@ public:
         return (queryMST2(ss, mid, lix) + queryMST2(mid + 1, se, rix));
     }
 };
+//nothing
